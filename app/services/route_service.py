@@ -2,9 +2,9 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path="app/services/.env")
-GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+load_dotenv("app\services\.env")
 
+GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 
 def get_route(start: str, end: str):
     url = "https://maps.googleapis.com/maps/api/directions/json"
@@ -13,7 +13,7 @@ def get_route(start: str, end: str):
         "destination": end,
         "key": GOOGLE_MAPS_API_KEY,
         "language": "tr",
-        "alternatives": "true"  # Alternatif rotalar gelsin
+        "alternatives": "true"
     }
     response = requests.get(url, params=params)
     data = response.json()
@@ -43,4 +43,3 @@ def get_route(start: str, end: str):
         })
 
     return {"rotalar": routes}
-
