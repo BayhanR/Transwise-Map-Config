@@ -42,3 +42,4 @@
 2025-07-14 18:38:33,933 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
 2025-07-14 18:38:59,492 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Error 10061 connecting to localhost:6379. Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
 2025-07-14 18:39:25,123 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Error 10061 connecting to localhost:6379. Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+2025-07-17 13:36:31,780 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:0cbea6ce-b070-4280-b58a-4854be34ba71
